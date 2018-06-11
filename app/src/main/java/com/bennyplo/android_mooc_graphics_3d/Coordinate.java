@@ -12,7 +12,7 @@ public class Coordinate {
     {//create a Coordinate object
         this.x=x;this.y=y;this.z=z; this.w=w;
     }
-    public void Keep_Homogenous()
+    public void Normalise()
     {//to keep it as a homogeneous coordinate -> divide the coordinate with w and set w=1
         if (w!=0)
         {//ensure that w!=0

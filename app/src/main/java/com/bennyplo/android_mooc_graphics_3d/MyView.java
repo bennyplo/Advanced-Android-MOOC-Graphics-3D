@@ -96,7 +96,7 @@ public class MyView extends View {
         for (int i=0;i<vertices.length;i++)
         {
            result[i]=Transformation(vertices[i],matrix);
-           result[i].Keep_Homogenous();
+           result[i].Normalise();
         }
         return result;
     }
