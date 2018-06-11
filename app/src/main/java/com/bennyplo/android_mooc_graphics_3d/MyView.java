@@ -20,14 +20,14 @@ public class MyView extends View {
         redPaint.setStrokeWidth(2);
         //create a 3D cube
         cube_vertices = new Coordinate[8];
-        cube_vertices[0] = new Coordinate(-1, -1, -1, 0);
-        cube_vertices[1] = new Coordinate(-1, -1, 1, 0);
-        cube_vertices[2] = new Coordinate(-1, 1, -1, 0);
-        cube_vertices[3] = new Coordinate(-1, 1, 1, 0);
-        cube_vertices[4] = new Coordinate(1, -1, -1, 0);
-        cube_vertices[5] = new Coordinate(1, -1, 1, 0);
-        cube_vertices[6] = new Coordinate(1, 1, -1, 0);
-        cube_vertices[7] = new Coordinate(1, 1, 1, 0);
+        cube_vertices[0] = new Coordinate(-1, -1, -1, 1);
+        cube_vertices[1] = new Coordinate(-1, -1, 1, 1);
+        cube_vertices[2] = new Coordinate(-1, 1, -1, 1);
+        cube_vertices[3] = new Coordinate(-1, 1, 1, 1);
+        cube_vertices[4] = new Coordinate(1, -1, -1, 1);
+        cube_vertices[5] = new Coordinate(1, -1, 1, 1);
+        cube_vertices[6] = new Coordinate(1, 1, -1, 1);
+        cube_vertices[7] = new Coordinate(1, 1, 1, 1);
         draw_cube_vertices=translate(cube_vertices,2,2,2);
         draw_cube_vertices=scale(draw_cube_vertices,40,40,40);
         thisview.invalidate();//update the view
